@@ -54,7 +54,7 @@ int main() {
         auto end = std::chrono::high_resolution_clock::now();
 
         std::cout << "Inference ran successfully!" << std::endl;
-
+ 
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
         std::cout << "Inference took " << duration / 100.0 << "ms" << std::endl;
 
@@ -71,7 +71,7 @@ int main() {
         // 打印前几个输出数值
         std::cout << "Output values: ";
         for (size_t i = 0; i < std::min((size_t)10, output_tensors[0].GetTensorTypeAndShapeInfo().GetElementCount()); ++i) {
-            std::cout << output_data[i] << " ";
+            std::cout << output_data[i] << " "; 
         }
         std::cout << std::endl;
 
