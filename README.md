@@ -16,8 +16,11 @@ python train.py config/train_shakespeare_char.py
 python trans2onnx.py
 ```
 
-## 量化加速方案
-暂无
+## 加速方案
+### 量化
+CPU上：FP16量化->int8量化：从7ms->4ms
+GPU上：int8的推理效果不明显，原因是消费级的cuda core本来就不对int8做优化
+
 
 ## 模型推理
 用onnx runtime 推理
