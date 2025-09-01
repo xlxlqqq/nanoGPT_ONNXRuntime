@@ -1,3 +1,5 @@
+# 将模型从PT转换成ONNX模型的脚本
+
 import torch
 import torch.onnx
 from model import GPT, GPTConfig

@@ -1,3 +1,5 @@
+# 评估量化前后的准确率脚本
+
 import numpy as np
 import onnxruntime as ort
 

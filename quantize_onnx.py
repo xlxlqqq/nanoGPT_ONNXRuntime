@@ -1,3 +1,5 @@
+# 将模型转化成INT8量化类型的脚本
+
 import onnx
 from onnxruntime.quantization import quantize_dynamic, QuantType
 
